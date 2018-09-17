@@ -4,8 +4,7 @@ using System.Threading.Tasks;
 using Xunit;
 
 namespace PalTrackerTests
-{
-    
+{    
     [Collection("Integration")]
     public class EnvIntegrationTest
     {
