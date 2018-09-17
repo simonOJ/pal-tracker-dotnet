@@ -6,4 +6,4 @@ applications:
   - route: pal-tracker-prod-grouchy-fossa.apps.pikes.pal.pivotal.io
 
   env:
-    WELCOME_MESSAGE: Hello from the production environement
+    WELCOME_MESSAGE: Hello from the production environment

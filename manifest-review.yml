@@ -6,4 +6,4 @@ applications:
   - route: pal-tracker-review-grouchy-fossa.apps.pikes.pal.pivotal.io
 
   env:
-    WELCOME_MESSAGE: Hello from the review environement
+    WELCOME_MESSAGE: Hello from the review environment
