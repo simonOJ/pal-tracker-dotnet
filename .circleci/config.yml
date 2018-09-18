@@ -40,7 +40,7 @@ jobs:
             apt-get update
             apt-get install cf-cli
 
-- run:
+      - run:
           name: Install jq
           command: |
             apt-get -y install jq
@@ -62,7 +62,7 @@ jobs:
             cd $EXTRACT_DEST
 
             cf login -a $CF_API -u $CF_USERNAME -p $CF_PASSWORD -o $CF_ORG -s $ENVIRONMENT
-  ./migrate-databases.sh pal-tracker . /root/project
+            ./migrate-databases.sh pal-tracker . /root/project
             cf push -f manifest-$ENVIRONMENT.yml
 
 
@@ -109,8 +109,8 @@ jobs:
             cd $EXTRACT_DEST
 
             cf login -a $CF_API -u $CF_USERNAME -p $CF_PASSWORD -o $CF_ORG -s $ENVIRONMENT
-./migrate-databases.sh pal-tracker . /root/project           
- cf push -f manifest-$ENVIRONMENT.yml
+            ./migrate-databases.sh pal-tracker . /root/project           
+            cf push -f manifest-$ENVIRONMENT.yml
 
 workflows:
   version: 2
